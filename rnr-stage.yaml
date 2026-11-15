@@ -12,10 +12,10 @@
 # 4. A module that instantiates other modules (id_stage, ex_stage, single_cycle_riscv) needs those
 #    modules listed here too.
 yaml_version: 1
-stage: fetch
+stage: integration
 
 modules:
-  if_stage:           {source_files: [IF_Stage/if_stage.sv]}
+  if_stage:           {source_files: [IF_Stage/rtl.sv]}
   decoder:            {source_files: [Decoder/rtl.sv]}
   imm_generator:      {source_files: [Immediate_Generator/rtl.sv]}
   register_file:      {source_files: [Register_File/rtl.sv]}
